@@ -1,0 +1,21 @@
+/vendor/*
+
+sites/*/settings*.php
+sites/*/services*.yml
+
+sites/*/files
+sites/*/private
+
+sites/simpletest
+
+ */settings*.php
+
+*/files
+*/private
+
+/.docker-local/.env
+.idea/*
+/node_modules/*
+/web/sites/default/files/*
+/web/themes/custom/test/css/
+/web/themes/custom/test/js/
