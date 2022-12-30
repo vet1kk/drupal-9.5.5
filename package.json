@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/vet1kk/drupal-9.5.5#readme",
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "gulp-cli": "^2.3.0"
   },
   "devDependencies": {
