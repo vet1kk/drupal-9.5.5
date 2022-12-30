@@ -19,3 +19,5 @@ sites/simpletest
 /web/sites/default/files/*
 /web/themes/custom/test/css/
 /web/themes/custom/test/js/
+
+/web/sites/default/settings.php
