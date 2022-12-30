@@ -1,0 +1,35 @@
+{
+  "name": "drupal-9.5.5",
+  "version": "1.0.0",
+  "description": "Drupal cms",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vet1kk/drupal-9.5.5.git"
+  },
+  "keywords": [
+    "drupal"
+  ],
+  "author": "vet1kk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vet1kk/drupal-9.5.5/issues"
+  },
+  "homepage": "https://github.com/vet1kk/drupal-9.5.5#readme",
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "readable-stream": "^4.2.0",
+    "sass": "^1.57.1"
+  }
+}
