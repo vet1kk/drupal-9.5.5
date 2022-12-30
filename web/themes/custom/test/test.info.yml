@@ -1,0 +1,22 @@
+name: Test Drupal theme
+type: theme
+description: 'A flexible Booststrap based theme, with many regions and a responsive, mobile-first layout.'
+core: 8.x
+core_version_requirement: ^8 || ^9|| ^10
+base theme: false
+version: 1.0.0
+
+libraries:
+  - test/global-styling
+
+stylesheets-remove:
+  - core/modules/system/css/components/align.module.css
+  - core/modules/views/css/views.module.css
+regions:
+  header: 'Header'
+  main_navigation: 'Main navigation'
+  content: 'Content'
+  aside_right: 'Aside right'
+  aside_left: 'Aside left'
+  footer: 'Footer'
+

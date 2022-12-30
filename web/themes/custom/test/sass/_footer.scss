@@ -1,0 +1,16 @@
+@import "variables";
+.main-footer{
+  background-color: $color-footer;
+  padding: 1rem;
+  color: $color-white;
+  height: 100%;
+  max-height: 25%;
+  a {
+    color: $color-white;
+    text-decoration: none;
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}
+

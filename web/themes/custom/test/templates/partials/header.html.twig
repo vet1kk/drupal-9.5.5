@@ -1,0 +1,12 @@
+<header class="main-header pt-2" role="banner">
+  <div class="container d-flex justify-content-between">
+    <div class="header">
+      {{ page.header }}
+    </div>
+  {% if page.main_navigation %}
+    <div class="main-navigation">
+      {{ page.main_navigation }}
+    </div>
+  {% endif %}
+  </div>
+</header>
