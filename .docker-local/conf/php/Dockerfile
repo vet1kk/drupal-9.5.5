@@ -15,8 +15,11 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) intl \
     && docker-php-ext-install -j$(nproc) pgsql \
     && docker-php-ext-install -j$(nproc) pdo_pgsql \
-    && docker-php-ext-install opcache
-
+    && docker-php-ext-install opcache \
+    && docker-php-ext-configure gd \
+            --with-freetype=/usr/include/ \
+            --with-jpeg=/usr/include/ \
+            --with-xpm=/usr/lib/x86_64-linux-gnu/
 
 COPY ./opcache.ini /usr/local/etc/php/conf.d/opcache.ini
 RUN pecl install xdebug
