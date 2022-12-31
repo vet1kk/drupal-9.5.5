@@ -21,3 +21,4 @@ sites/simpletest
 /web/themes/custom/test/js/
 
 /web/sites/default/settings.php
+/web/modules/

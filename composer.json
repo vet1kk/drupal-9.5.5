@@ -20,7 +20,10 @@
         "drupal/core-composer-scaffold": "^9.5",
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
-        "drupal/disable_enable_all_assign_block": "^2.0"
+        "drupal/ctools": "^3.13",
+        "drupal/devel": "^5.0",
+        "drupal/disable_enable_all_assign_block": "^2.0",
+        "drupal/pathauto": "^1.11"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -92,5 +95,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drush/drush": "^11.4"
     }
 }
