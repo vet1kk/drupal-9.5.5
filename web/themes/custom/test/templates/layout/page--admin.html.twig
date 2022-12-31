@@ -1,45 +1,30 @@
 <div class="layout-container">
-  <header class="pt-2 h-25" role="banner">
-    <div class="container d-flex justify-content-between">
-      <div class="header">
-        {{ page.header }}
-      </div>
-      {% if page.main_navigation %}
-        <div class="main-navigation">
-          {{ page.main_navigation }}
-        </div>
-      {% endif %}
+  <header role="banner">
+    <div class="container d-flex justify-content-between pt-5">
+      {{ page.header }}
+      {{ page.main_navigation }}
     </div>
   </header>
 
-  <main  class="py-4 h-50">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-    <div class="container grid gap-5 h-100" style="--bs-columns: 6;">
-      {% if page.aside_left %}
+  <main class="py-5">
+    <div class="container grid gap-5" style="--bs-columns: 6;">
         <div class="g-col-1">
           {{ page.aside_left }}
         </div>
-      {% endif %}
       <div class="g-col-4">
-        <div class="d-flex justify-content-center">
           {{ page.content }}
-        </div>
       </div>
-      {% if page.aside_right %}
         <div class="g-col-1">
           {{ page.aside_right }}
         </div>
-      {% endif %}
     </div>
   </main>
 
-  <footer role="contentinfo" class="py-4 h-25">
+  <footer role="contentinfo" class="py-5">
     <div class="container">
-      {% if page.footer %}
-        <div class="footer grid">
+        <div>
           {{ page.footer }}
         </div>
-      {% endif %}
     </div>
   </footer>
 </div>
