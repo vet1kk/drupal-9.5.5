@@ -23,6 +23,7 @@
         "drupal/ctools": "^3.13",
         "drupal/devel": "^5.0",
         "drupal/disable_enable_all_assign_block": "^2.0",
+        "drupal/field_group": "^3.4",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
         "drupal/webform": "^6.1",
