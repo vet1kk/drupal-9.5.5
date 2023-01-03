@@ -25,4 +25,6 @@ COPY ./opcache.ini /usr/local/etc/php/conf.d/opcache.ini
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug
 
-RUN curl -sS https://getcomposer.org/installer | php -- --version=2.1.14 && mv composer.phar /usr/local/bin/composer
+RUN curl -sS https://getcomposer.org/installer | php -- --version=2.1.14 && mv composer.phar /usr/local/bin/composer  \
+    && composer require drush/drush --dev \
+    && ln -s /var/www/html/vendor/drush/drush/drush /usr/local/bin/drush
