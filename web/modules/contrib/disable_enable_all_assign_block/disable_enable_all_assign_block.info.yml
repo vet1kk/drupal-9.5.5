@@ -1,0 +1,12 @@
+name: 'Disable And Enable All Assign Block'
+description: 'Disable and enable all assign block as per the region at one time.'
+type: module
+configure: disable_enable_all_assign_block.settings_advanced
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - drupal:block
+
+# Information added by Drupal.org packaging script on 2022-11-14
+version: '2.0.1'
+project: 'disable_enable_all_assign_block'
+datestamp: 1668407091

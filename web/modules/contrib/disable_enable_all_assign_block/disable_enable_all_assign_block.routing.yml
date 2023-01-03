@@ -1,0 +1,15 @@
+disable_enable_all_assign_block.admin:
+  path: '/admin/config/disable_enable_all_assign_block'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Disable enable block configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
+disable_enable_all_assign_block.settings_advanced:
+  path: '/admin/config/disable_enable_all_assign_block/deaab_settings_advanced'
+  defaults:
+    _form: '\Drupal\disable_enable_all_assign_block\Form\DisableEnableBlockSettingsForm'
+    _title: 'Configuration form'
+  requirements:
+    _permission: 'administer site configuration'

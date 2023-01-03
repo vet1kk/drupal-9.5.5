@@ -1,0 +1,12 @@
+{
+  "name": "drupal/disable_enable_all_assign_block",
+  "description": "Disable and enable all assign block as per the region at one time.",
+  "type": "drupal-module",
+  "authors": [
+    {
+      "name": "Rohit Rajput (rohit-drupal)",
+      "homepage": "https://www.drupal.org/u/rohit-drupal",
+      "role": "Maintainer"
+    }
+  ]
+}

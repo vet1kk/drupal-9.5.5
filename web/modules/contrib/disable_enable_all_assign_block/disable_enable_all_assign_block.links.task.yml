@@ -1,0 +1,4 @@
+disable_enable_all_assign_block.settings_advanced:
+  route_name: disable_enable_all_assign_block.settings_advanced
+  title: Settings
+  base_route: disable_enable_all_assign_block.settings_advanced

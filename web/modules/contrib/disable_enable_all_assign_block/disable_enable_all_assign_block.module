@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Disable And Enable All Assign Block module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function disable_enable_all_assign_block_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.disable_enable_all_assign_block':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t("Disable and enable all assign block as per the region at one time.") . '</p>';
+      $output .= '<h3>' . t('Configuration') . '</h3>';
+      $output .= '<ol>
+            <li>Install module "Disable and enable all assign block"</li>
+            <li>Go to the "Admin Configuration". Eg:- Admin Menu >> Configuration >> Disable and enable all assign block</li>
+            <li>Check the checkbox for disabled assign blocks for the region.</li>
+            <li>Un-checked the checkbox for enables the assigned block for the region.</li>
+            <li>Click on Save configuration button.</li>
+        </ol>';
+      return $output;
+  }
+}

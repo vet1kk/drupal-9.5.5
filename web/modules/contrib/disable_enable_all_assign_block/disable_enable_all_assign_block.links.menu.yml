@@ -1,0 +1,11 @@
+disable_enable_all_assign_block.admin:
+    title: Disable and enable all assign block
+    parent: system.admin_config
+    route_name: disable_enable_all_assign_block.admin
+    weight: 70
+
+disable_enable_all_assign_block.settings_advanced:
+    title: Configuration form
+    parent: disable_enable_all_assign_block.admin
+    route_name: disable_enable_all_assign_block.settings_advanced
+    weight: 10

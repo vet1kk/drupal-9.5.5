@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Uninstall functions for disable_enable_all_assign_block module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function disable_enable_all_assign_block_uninstall() {
+  \Drupal::configFactory()->getEditable('disable_enable_all_assign_block.settings_advanced')->delete();
+}
