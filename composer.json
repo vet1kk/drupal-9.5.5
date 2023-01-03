@@ -23,7 +23,10 @@
         "drupal/ctools": "^3.13",
         "drupal/devel": "^5.0",
         "drupal/disable_enable_all_assign_block": "^2.0",
-        "drupal/pathauto": "^1.11"
+        "drupal/paragraphs": "^1.15",
+        "drupal/pathauto": "^1.11",
+        "drupal/webform": "^6.1",
+        "wikimedia/composer-merge-plugin": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -35,7 +38,8 @@
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "wikimedia/composer-merge-plugin": true
         },
         "sort-packages": true
     },
@@ -94,6 +98,14 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "merge-plugin": {
+            "include": [
+                "composer.libraries.json"
+            ],
+            "merge-extra": true,
+            "merge-extra-deep": true,
+            "merge-scripts": true
         }
     },
     "require-dev": {
