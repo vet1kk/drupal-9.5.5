@@ -2,19 +2,19 @@
   {% include directory ~ '/templates/partials/header.html.twig' %}
   <main class="py-5 mb-auto">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-    <div class="container grid gap-5" style="--bs-columns: 6;">
+    <div class="container d-flex justify-content-between gap-5" style="--bs-columns: 3;">
       {% if page.aside_left %}
-        <div class="g-col-1">
+        <div class="col-2">
           {{ page.aside_left }}
         </div>
       {% endif %}
-      <div class="g-col-4">
-        <div class="d-flex justify-content-center">
+      <div class="col">
+        <div>
           {{ page.content }}
         </div>
       </div>
       {% if page.aside_right %}
-        <div class="g-col-1">
+        <div class="col-2">
           {{ page.aside_right }}
         </div>
       {% endif %}
