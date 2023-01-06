@@ -1,0 +1,10 @@
+name: 'Hello World'
+type: module
+description: 'Hello World Example module'
+core_version_requirement: ^8 || ^9 || ^10
+package: 'Custom'
+
+# Information added by Drupal.org packaging script on 2022-09-10
+version: '2.0.1'
+project: 'helloworld'
+datestamp: 1662780879
