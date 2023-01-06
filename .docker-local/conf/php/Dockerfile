@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) intl \
     && docker-php-ext-install -j$(nproc) pgsql \
     && docker-php-ext-install -j$(nproc) pdo_pgsql \
+    && docker-php-ext-install bcmath \
     && docker-php-ext-install opcache \
     && docker-php-ext-configure gd \
             --with-freetype=/usr/include/ \
