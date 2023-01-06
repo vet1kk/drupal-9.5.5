@@ -1,0 +1,7 @@
+name: Movie List
+description: 'Provides a movie list.'
+package: Movie List
+version: 8.x-1.0
+
+type: module
+core_version_requirement: ^8.8 || ^9.5

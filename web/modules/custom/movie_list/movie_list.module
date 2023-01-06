@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+
+function movie_list_theme($existing, $type, $theme, $path): array
+{
+  return [
+    'movie-listening' => [
+      'variables' => ['content' => null],
+    ],
+    'movie-card' => [
+      'variables' => ['content' => null],
+    ],
+  ];
+}

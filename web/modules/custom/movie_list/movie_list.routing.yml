@@ -1,0 +1,14 @@
+movie_list.listing:
+  path: '/movie-listing'
+  defaults:
+    _controller: '\Drupal\movie_list\Controller\MovieList::view'
+    _title: 'Movie list'
+  requirements:
+    _permission: 'access content'
+movie_list.api_config_page:
+  path: '/admin/config/movie-api'
+  defaults:
+    _form: '\Drupal\movie_list\Form\MovieAPI'
+    _title: 'Movie API'
+  requirements:
+    _permission: 'access content'

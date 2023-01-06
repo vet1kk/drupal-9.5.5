@@ -1,0 +1,4 @@
+services:
+   movie_list.api_connector:
+     class: Drupal\movie_list\MovieAPIConnector
+     arguments: ['@http_client_factory']
